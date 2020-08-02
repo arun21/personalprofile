@@ -1,22 +1,5 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
+import "./User.css";
 
 // reactstrap components
 import {
@@ -190,7 +173,7 @@ class User extends React.Component {
             <Col md="8">
               <Card className="card-user">
                 <CardHeader>
-                  <CardTitle tag="h5">Edit Profile</CardTitle>
+                  <CardTitle tag="h5">Profile</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Form>
@@ -211,6 +194,7 @@ class User extends React.Component {
                           <label>Username</label>
                           <Input
                             defaultValue="arun21"
+                            disabled
                             placeholder="Username"
                             type="text"
                           />
@@ -221,7 +205,7 @@ class User extends React.Component {
                           <label htmlFor="exampleInputEmail1">
                             Email address
                           </label>
-                          <Input placeholder="Email" type="email" />
+                          <Input placeholder="Email" disabled type="email" />
                         </FormGroup>
                       </Col>
                     </Row>
@@ -231,6 +215,7 @@ class User extends React.Component {
                           <label>First Name</label>
                           <Input
                             defaultValue="Arun"
+                            disabled
                             placeholder="Company"
                             type="text"
                           />
@@ -241,6 +226,7 @@ class User extends React.Component {
                           <label>Last Name</label>
                           <Input
                             defaultValue="Prabhu"
+                            disabled
                             placeholder="Last Name"
                             type="text"
                           />
@@ -253,6 +239,7 @@ class User extends React.Component {
                           <label>Address</label>
                           <Input
                             defaultValue="Brampton, Canada"
+                            disabled
                             placeholder="Home Address"
                             type="text"
                           />
@@ -260,36 +247,39 @@ class User extends React.Component {
                       </Col>
                     </Row>
                     <Row>
-                      <Col className="pr-1" md="4">
+                      <Col className="pr-1" md="6">
                         <FormGroup>
                           <label>City</label>
                           <Input
                             defaultValue="Brampton"
+                            disabled
                             placeholder="City"
                             type="text"
                           />
                         </FormGroup>
                       </Col>
-                      <Col className="px-1" md="4">
+                      <Col className="pl-1" md="6">
                         <FormGroup>
                           <label>Country</label>
                           <Input
                             defaultValue="Canada"
+                            disabled
                             placeholder="Country"
                             type="text"
                           />
                         </FormGroup>
                       </Col>
-                      <Col className="pl-1" md="4">
+                      {/* <Col className="pl-1" md="4">
                         <FormGroup>
                           <label>Postal Code</label>
                           <Input
                             defaultValue="M8Y 1Z1"
+                            disabled
                             placeholder="ZIP Code"
                             type="text"
                           />
                         </FormGroup>
-                      </Col>
+                      </Col> */}
                     </Row>
                     <Row>
                       <Col md="12">
@@ -297,12 +287,13 @@ class User extends React.Component {
                           <label>About Me</label>
                           <Input
                             type="textarea"
+                            disabled
                             defaultValue="DevOps Engineer | Full Stack Developer"
                           />
                         </FormGroup>
                       </Col>
                     </Row>
-                    <Row>
+                    {/* <Row>
                       <div className="update ml-auto mr-auto">
                         <Button
                           className="btn-round"
@@ -312,7 +303,7 @@ class User extends React.Component {
                           Update Profile
                         </Button>
                       </div>
-                    </Row>
+                    </Row> */}
                   </Form>
                 </CardBody>
               </Card>
